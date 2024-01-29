@@ -6,6 +6,7 @@ services:
     container_name: python-speedtest
     hostname: python-speedtest
     environment:
+      - TZ=America/Toronto
       - INFLUXDB_HOST=influxdb
       - INFLUXDB_PORT=8086
       - INFLUXDB_USERNAME=your_influxdb_username
